@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thu Millets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+
+<!-- ✅ Navbar -->
+<header id="navbar" class="fixed w-full z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto flex justify-center items-center py-1 px-2 transition-all duration-500">
+
+    <!-- Left Menu -->
+    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="#home" class="hover:text-green-400 transition">Home</a>
+      <a href="#about" class="hover:text-green-400 transition">About Us</a>
+      <a href="#products" class="hover:text-green-400 transition">Products</a>
+    </nav>
+
+    <!-- Logo in Center -->
+    <div class="mx-12 transition-all duration-500">
+      <img id="logo" src="img/logo.png" alt="Earthly Basket" class="h-20 md:h-24 transition-all duration-500"> 
+    </div>
+
+    <!-- Right Menu -->
+    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="#contact" class="hover:text-green-400 transition">Contact Us</a>
+      <a href="#track" class="hover:text-green-400 transition">Track Order</a>
+    </nav>
+     
+  </div>
+</header>
+
+
+
+  <!-- Hero Section Fullscreen -->
+  <section class="h-screen flex items-center bg-gradient-to-r from-black via-black to-orange-500 text-white pt-24">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center px-6 md:px-12 w-full">
+
+      <!-- Left Image -->
+      <div class="w-full md:w-1/2 flex justify-center relative" data-aos="zoom-in">
+        <img src="img/h-2.webp" alt="Dosa" class="w-80 md:w-[400px] rounded-lg shadow-lg z-10">
+        <img src="img/h-3.webp" class="absolute top-10 left-5 w-20 md:w-24" alt="Chutney" data-aos="fade-up" data-aos-delay="200">
+        <img src="img/h-1.webp" class="absolute bottom-10 left-20 w-20 md:w-24" alt="Chutney" data-aos="fade-up" data-aos-delay="400">
+      </div>
+
+      <!-- Right Content -->
+      <div class="w-full md:w-1/2 mt-8 md:mt-0 text-center md:text-left md:pl-10" data-aos="fade-left">
+        <h2 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+           <br>
+          <span class="text-yellow-300">EARTHLY BASKET</span>
+        </h2>
+        <p class="text-lg text-gray-200 mb-6">Healthy Living, Earthly Giving.</p>
+        <a href="#products" class="bg-white text-orange-600 px-6 py-3 rounded-full shadow-lg font-semibold hover:bg-orange-200 transition transform hover:scale-105" data-aos="zoom-in" data-aos-delay="500">
+          View Products →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Track Order Button -->
+  <div class="fixed bottom-6 right-6">
+    <button class="bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition">
+      Track Order
+    </button>
+  </div>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10" data-aos="fade-down">Our Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up">
+          <img src="img/Product-1.webp" alt="Product" class="w-full h-66 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Foxtail Millet Adai Dosa Mix</h3>
+          <p class="text-gray-600 mb-4">Healthy, tasty, and ready in 3 steps.</p>
+          <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+          <img src="img/Product-1.webp" alt="Product" class="w-full h-66 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Barnyard Millet Mix</h3>
+          <p class="text-gray-600 mb-4">Rich in protein, fiber & minerals.</p>
+          <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Buy Now</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+          <img src="img/Product-1.webp" alt="Product" class="w-full h-66 object-cover mb-4">
+          <h3 class="text-xl font-semibold mb-2">Ragi Dosa Mix</h3>
+          <p class="text-gray-600 mb-4">Perfect breakfast with calcium boost.</p>
+          <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ✅ Features Section -->
+<section class="py-16 bg-white text-center" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="text-gray-600 mb-6">
+      Welcome to <span class="font-bold text-green-600">Earthly Basket</span>, your one-stop solution for all your breakfast needs in ready-to-cook and ready-to-eat formats. We passionately research and curate fabulous recipes – from traditional Pongal to savory Upma, delightful Kesaribath to sumptuous Kheer, and hearty Bisibele bath to flavorsome Veg bath. With Earthly Basket, we continue our commitment to bringing you the best in wholesome breakfast cuisine.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="100">
+        <img src="img/f-1.webp" class="h-12 mb-4" alt="Years">
+        <h3 class="font-bold text-lg text-green-600">2 YEARS</h3>
+        <p class="text-gray-600">2 years of passion, research, and food innovation.</p>
+      </div>
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="200">
+        <img src="img/f-2.webp" class="h-12 mb-4" alt="Minutes">
+        <h3 class="font-bold text-lg text-green-600">3 TO 8 MINUTES</h3>
+        <p class="text-gray-600">Quick premixes from Pongal to Upma and more.</p>
+      </div>
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="300">
+        <img src="img/f-3.webp" class="h-12 mb-4" alt="Natural">
+        <h3 class="font-bold text-lg text-green-600">100% NATURAL</h3>
+        <p class="text-gray-600">Pure millet, no shortcuts, no preservatives.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Why Choose Us Section -->
+<section class="py-16 bg-black text-white">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Image -->
+    <img src="img/grains.webp" alt="Millets" class="rounded-xl shadow-lg" data-aos="fade-right">
+
+    <!-- Right Content -->
+    <div data-aos="fade-left">
+      <h2 class="text-3xl font-bold mb-6">We make it Healthy, we make it Fun and Easy.</h2>
+      <ul class="space-y-4">
+        <li class="flex items-center gap-3"><span class="text-green-400">✔</span> Get a tasty meal on the table in 3 steps</li>
+        <li class="flex items-center gap-3"><span class="text-green-400">✔</span> Made from yields directly from farms</li>
+        <li class="flex items-center gap-3"><span class="text-green-400">✔</span> So homely it reminds you of your mother’s food</li>
+        <li class="flex items-center gap-3"><span class="text-green-400">✔</span> Ready to eat for any meal of the day</li>
+        <li class="flex items-center gap-3"><span class="text-green-400">✔</span> 100% Natural, No Preservatives</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Lifestyle Section -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Cards -->
+    <div class="grid grid-cols-2 gap-6" data-aos="fade-right">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="img/l-1.webp" alt="Healthy Living" class="w-full h-32 object-cover">
+        <div class="p-4 flex justify-between items-center">
+          <p class="font-semibold">Healthy Living</p>
+          <span class="text-green-600 text-xl">➝</span>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="img/l-5.webp" alt="Diabetes" class="w-full h-32 object-cover">
+        <div class="p-4 flex justify-between items-center">
+          <p class="font-semibold">Diabetes</p>
+          <span class="text-green-600 text-xl">➝</span>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="img/l-3.webp" alt="Diet" class="w-full h-32 object-cover">
+        <div class="p-4 flex justify-between items-center">
+          <p class="font-semibold">Diet</p>
+          <span class="text-green-600 text-xl">➝</span>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="img/l-2.webp" alt="Breakfast Buff" class="w-full h-32 object-cover">
+        <div class="p-4 flex justify-between items-center">
+          <p class="font-semibold">Breakfast Buff</p>
+          <span class="text-green-600 text-xl">➝</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Content -->
+    <div data-aos="fade-left">
+      <p class="text-gray-600 mb-6">
+        At <span class="font-bold text-green-600">Earthly Basket</span>, we believe in food that nourishes the body and soul. While fast food has dominated our modern lifestyle, we bring back the tradition of wholesome, millet-based meals for healthy, stress-free living.
+      </p>
+      <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700 transition">
+        Read More →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Footer -->
+<footer class="bg-black text-gray-300 py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-10">
+    
+    <!-- Address -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Address</h3>
+      <p>Earthly Basket Pvt Ltd<br>Sy No 72/2A, Krishnappa layout,<br>Srigandha Nagar, Hegganahalli<br>Bengaluru, Karnataka, India 560091</p>
+    </div>
+
+    <!-- Head Office -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Head Office</h3>
+      <p>Earthly Basket - Corporate Office<br>Scube Complex, KR Rd, near JC Circle,<br>Kammavari Pete, Hoskote,<br>Bengaluru, Karnataka, India 562114</p>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Useful Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Our Blog</a></li>
+        <li><a href="#" class="hover:text-white">About Us</a></li>
+        <li><a href="#" class="hover:text-white">Shop</a></li>
+        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Policies</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms and Conditions</a></li>
+        <li><a href="#" class="hover:text-white">Delivery Policy</a></li>
+        <li><a href="#" class="hover:text-white">Return & Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Us -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Contact Us</h3>
+      <p>📞 +91 8310185511 / +91 6360756153</p>
+      <p>📧 info@earthlybasket.com</p>
+<div class="flex space-x-4 mt-4 justify-end">
+  <!-- Facebook -->
+  <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="#" class="text-gray-600 hover:text-pink-500" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.8-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
+    </svg>
+  </a>
+
+  <!-- X (Twitter) -->
+  <a href="#" class="text-gray-600 hover:text-black" aria-label="X">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M17.21 3H20.5l-7.5 9.5 8.8 11.5h-6.9L9.8 15.6 4.2 24H.9L9 13.9.6 3h7.1l5 6.6L17.2 3z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="#" class="text-gray-600 hover:text-red-600" aria-label="YouTube">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M21.8 8s-.2-1.5-.8-2.1c-.8-.9-1.7-.9-2.1-1C16.3 4.7 12 4.7 12 4.7h0s-4.3 0-6.9.2c-.4 0-1.3.1-2.1 1C2.2 6.5 2 8 2 8S1.8 9.7 1.8 11.4v1.2C1.8 14.3 2 16 2 16s.2 1.5.9 2.1c.8.9 1.8.9 2.2 1 1.6.1 6.9.2 6.9.2s4.3 0 6.9-.2c.4 0 1.3-.1 2.1-1 .7-.6.8-2.1.8-2.1s.2-1.7.2-3.4v-1.2c0-1.7-.2-3.4-.2-3.4zM9.7 14.6V9.4l5.6 2.6-5.6 2.6z"/>
+    </svg>
+  </a>
+</div>
+
+    </div>
+
+  </div>
+</footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  </script>
+
+  <script>
+ const navbar = document.getElementById("navbar");
+  const logo = document.getElementById("logo");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-black", "shadow-md", "py-2");
+      logo.classList.remove("h-20", "md:h-24");
+      logo.classList.add("h-12", "md:h-16");
+    } else {
+      navbar.classList.remove("bg-black", "shadow-md", "py-2");
+      logo.classList.remove("h-12", "md:h-16");
+      logo.classList.add("h-20", "md:h-24");
+    }
+  });
+</script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
