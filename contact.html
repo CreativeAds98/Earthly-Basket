@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earthly Basket</title>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+
+<!-- ✅ Navbar -->
+<header id="navbar" class="fixed w-full z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto flex justify-center items-center py-1 px-2 transition-all duration-500">
+
+    <!-- Left Menu -->
+    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="index.html" class="hover:text-green-400 transition">Home</a>
+      <a href="about.html" class="hover:text-green-400 transition">About Us</a>
+      <a href="product.html" class="hover:text-green-400 transition">Products</a>
+    </nav>
+
+    <!-- Logo in Center -->
+    <div class="mx-12 transition-all duration-500">
+      <img id="logo" src="img/logo.png" alt="Earthly Basket" class="h-20 md:h-24 transition-all duration-500"> 
+    </div>
+
+    <!-- Right Menu -->
+    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="#contact" class="hover:text-green-400 transition">Contact Us</a>
+      <a href="trackorder.html" class="hover:text-green-400 transition">Track Order</a>
+    </nav>
+     
+  </div>
+</header>
+
+
+
+
+<!-- ✅ Contact Us Section with Background Image -->
+<section class="relative py-20 bg-cover bg-center" style="background-image: url('img/c.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- Dark overlay -->
+
+  <div class="relative container mx-auto px-6 lg:px-20">
+    <div class="grid lg:grid-cols-2 gap-10">
+      
+      <!-- Left Side - Address & Info -->
+      <div class="bg-white bg-opacity-90 shadow-lg rounded-2xl p-8">
+        <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+        
+        <!-- Address -->
+        <div class="mb-6">
+          <h3 class="font-semibold uppercase text-gray-700 mb-2">Address</h3>
+          <p class="text-gray-700">
+            Earthly Basket Pvt Ltd <br>
+            Playworkz Coworking Space, 3rd Cross Street<br>
+            Peelamedu,Bharathi Colony, Coimbatore,<br>
+            Tamil Nadu , India – 641001
+          </p>
+        </div>
+
+        <!-- Contact Number -->
+        <div class="mb-6">
+          <h3 class="font-semibold uppercase text-gray-700 mb-2">Contact No</h3>
+          <p class="text-gray-700">+91 86086 86085</p>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-6">
+          <h3 class="font-semibold uppercase text-gray-700 mb-2">Email</h3>
+          <p class="text-gray-700">info@earthlybasket.com</p>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="p-2 border rounded-full hover:bg-green-500 hover:text-white transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="p-2 border rounded-full hover:bg-green-500 hover:text-white transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="p-2 border rounded-full hover:bg-green-500 hover:text-white transition">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side - Contact Form -->
+      <div class="bg-white bg-opacity-90 shadow-lg rounded-2xl p-8">
+        <h2 class="text-2xl font-bold mb-2">Get in Touch</h2>
+        <p class="text-gray-600 mb-6">We really appreciate your feedback.</p>
+        
+        <form action="#" method="POST" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="Your Name*" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500">
+            <input type="text" placeholder="Contact No*" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500">
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="email" placeholder="Your Email*" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500">
+            <input type="text" placeholder="Subject" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500">
+          </div>
+          <textarea placeholder="Your Message" rows="5" class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500"></textarea>
+          <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+            Send Your Message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="mt-12">
+      <iframe 
+        class="w-full h-96 rounded-2xl shadow-lg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.193289662081!2d77.01981507480323!3d11.018910954556064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85995cda1b91f%3A0x3c39c939a9b9f74!2sPlayworkz%20Coworking%20Space!5e0!3m2!1sen!2sin!4v1725726057734!5m2!1sen!2sin"         allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+ 
+
+<!-- ✅ Footer -->
+<footer class="bg-black text-gray-300 py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-10">
+    
+    <!-- Address -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Address</h3>
+      <p>Playworkz Coworking Space, 3rd Cross Street,<br>Peelamedu,Bharathi  <br>Colony, Coimbatore, Tamil Nadu 641015</p>
+    </div>
+
+    <!-- Head Office -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Head Office</h3>
+      <p>Playworkz Coworking Space, 3rd Cross Street,<br>Peelamedu,Bharathi  <br>Colony, Coimbatore, Tamil Nadu 641015</p>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Useful Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Our Blog</a></li>
+        <li><a href="#" class="hover:text-white">About Us</a></li>
+        <li><a href="#" class="hover:text-white">Shop</a></li>
+        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Policies</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms and Conditions</a></li>
+        <li><a href="#" class="hover:text-white">Delivery Policy</a></li>
+        <li><a href="#" class="hover:text-white">Return & Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Us -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Contact Us</h3>
+      <p>📞 +91 86086 86085 </p>
+      <p>📧 info@earthlybasket.com</p>
+<div class="flex space-x-4 mt-4 justify-end">
+  <!-- Facebook -->
+  <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="#" class="text-gray-600 hover:text-pink-500" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.8-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
+    </svg>
+  </a>
+
+  <!-- X (Twitter) -->
+  <a href="#" class="text-gray-600 hover:text-black" aria-label="X">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M17.21 3H20.5l-7.5 9.5 8.8 11.5h-6.9L9.8 15.6 4.2 24H.9L9 13.9.6 3h7.1l5 6.6L17.2 3z"/>
+    </svg>
+  </a>
+
+  <!-- YouTube -->
+  <a href="#" class="text-gray-600 hover:text-red-600" aria-label="YouTube">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M21.8 8s-.2-1.5-.8-2.1c-.8-.9-1.7-.9-2.1-1C16.3 4.7 12 4.7 12 4.7h0s-4.3 0-6.9.2c-.4 0-1.3.1-2.1 1C2.2 6.5 2 8 2 8S1.8 9.7 1.8 11.4v1.2C1.8 14.3 2 16 2 16s.2 1.5.9 2.1c.8.9 1.8.9 2.2 1 1.6.1 6.9.2 6.9.2s4.3 0 6.9-.2c.4 0 1.3-.1 2.1-1 .7-.6.8-2.1.8-2.1s.2-1.7.2-3.4v-1.2c0-1.7-.2-3.4-.2-3.4zM9.7 14.6V9.4l5.6 2.6-5.6 2.6z"/>
+    </svg>
+  </a>
+</div>
+
+    </div>
+
+  </div>
+</footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  </script>
+
+  <script>
+ const navbar = document.getElementById("navbar");
+  const logo = document.getElementById("logo");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-black", "shadow-md", "py-2");
+      logo.classList.remove("h-20", "md:h-24");
+      logo.classList.add("h-12", "md:h-16");
+    } else {
+      navbar.classList.remove("bg-black", "shadow-md", "py-2");
+      logo.classList.remove("h-12", "md:h-16");
+      logo.classList.add("h-20", "md:h-24");
+    }
+  });
+</script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>
