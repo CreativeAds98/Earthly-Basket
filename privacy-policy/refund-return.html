@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/logo.png"/>
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
 </head>
 <body class="font-sans bg-white text-gray-800">
 
@@ -18,21 +18,21 @@
 
     <!-- Left Menu -->
     <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
-      <a href="index.html" class="hover:text-green-400 transition">Home</a>
-      <a href="about.html" class="hover:text-green-400 transition">About Us</a>
+      <a href="../index.html" class="hover:text-green-400 transition">Home</a>
+      <a href="../about.html" class="hover:text-green-400 transition">About Us</a>
       <a href="#products" class="hover:text-green-400 transition">Products</a>
     </nav>
 
     <!-- Logo in Center -->
     <div class="mx-12 transition-all duration-500">
-      <img id="logo" src="img/logo.png" alt="Earthly Basket" class="h-20 md:h-24 transition-all duration-500"> 
+      <img id="logo" src="../img/logo.png" alt="Earthly Basket" class="h-20 md:h-24 transition-all duration-500"> 
     </div>
 
     <!-- Right Menu -->
     <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
-      <a href="blog.html" class="hover:text-green-400 transition">Blog</a>
-      <a href="contact.html" class="hover:text-green-400 transition">Contact Us</a>
-      <a href="trackorder.html" class="hover:text-green-400 transition">Track Order</a>
+      <a href="../blog.html" class="hover:text-green-400 transition">Blog</a>
+      <a href="../contact.html" class="hover:text-green-400 transition">Contact Us</a>
+      <a href="../trackorder.html" class="hover:text-green-400 transition">Track Order</a>
     </nav>
      
   </div>
@@ -40,16 +40,38 @@
 
 
 
-
-<!-- ✅ Coming Soon Section -->
-<section class="relative py-32 bg-cover bg-center flex items-center justify-center" style="background-image: url('img/about-us/bg-1.jpg');">
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- dark overlay -->
-
-  <div class="relative text-center">
-    <img src="img/coming-soon.jpg" alt="Coming Soon" class="mx-auto max-w-lg">
+<section class="bg-black text-white pt-32 pb-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4">Our Policies</h1>
+    <p class="text-lg">Transparency and trust are at the core of Earthly Basket. Please review our policies below.</p>
   </div>
 </section>
+<!-- Policies -->
+<main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
 
+
+<!-- Return & Refund Policy -->
+<section id="refund" class="bg-white shadow rounded-xl p-6">
+<h2 class="text-2xl font-semibold text-emerald-700 mb-4">Return & Refund Policy</h2>
+<p>Your satisfaction matters to us. Due to the nature of our products, returns are accepted only under specific conditions.</p>
+<h3 class="text-xl font-medium mt-6">Returns</h3>
+<ul class="list-disc pl-6 mt-2 space-y-1">
+<li>Accepted if items are damaged, defective, or incorrect at delivery.</li>
+<li>Must be reported within 24 hours with proof.</li>
+</ul>
+<h3 class="text-xl font-medium mt-6">Refunds</h3>
+<ul class="list-disc pl-6 mt-2 space-y-1">
+<li>Processed within 7–10 business days after approval.</li>
+<li>Credited to the original payment method.</li>
+</ul>
+<h3 class="text-xl font-medium mt-6">Cancellations</h3>
+<ul class="list-disc pl-6 mt-2 space-y-1">
+<li>Orders can be cancelled before dispatch.</li>
+<li>Once shipped, cancellations are not possible.</li>
+</ul>
+<p class="mt-4">For support, email <a href="mailto:info@earthlybasket.com" class="text-emerald-700 underline">info@earthlybasket.com</a> or call <a href="tel:+918608686085" class="text-emerald-700 underline">+91 86086 86085</a>.</p>
+</section>
+</main>
 
 
 
@@ -75,10 +97,10 @@
     <div>
       <h3 class="font-semibold text-white mb-3">Useful Links</h3>
       <ul class="space-y-2">
-        <li><a href="blog.html" class="hover:text-white">Our Blog</a></li>
-        <li><a href="about.html" class="hover:text-white">About Us</a></li>
-        <li><a href="product.html" class="hover:text-white">Shop</a></li>
-        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+        <li><a href="../blog.html" class="hover:text-white">Our Blog</a></li>
+        <li><a href="../about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="../product.html" class="hover:text-white">Shop</a></li>
+        <li><a href="../contact.html" class="hover:text-white">Contact Us</a></li>
       </ul>
     </div>
 
@@ -86,10 +108,10 @@
     <div>
       <h3 class="font-semibold text-white mb-3">Policies</h3>
       <ul class="space-y-2">
-        <li><a href="./privacy-policy/privacy-policies.html" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="./privacy-policy/terms-conditions.html" class="hover:text-white">Terms and Conditions</a></li>
-        <li><a href="./privacy-policy/delivery.html" class="hover:text-white">Delivery Policy</a></li>
-        <li><a href="./privacy-policy/refund-return.html" class="hover:text-white">Return & Refund Policy</a></li>
+        <li><a href="privacy-policies.html" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="terms-conditions.html" class="hover:text-white">Terms and Conditions</a></li>
+        <li><a href="delivery.html" class="hover:text-white">Delivery Policy</a></li>
+        <li><a href="refund-return.html" class="hover:text-white">Return & Refund Policy</a></li>
       </ul>
     </div>
 

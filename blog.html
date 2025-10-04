@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Earthly Basket</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png"/>
+</head>
+<body class="font-sans bg-white text-gray-800">
+
+
+<!-- ✅ Navbar -->
+<header id="navbar" class="fixed w-full z-50 transition-all duration-500">
+  <div class="max-w-7xl mx-auto flex justify-center items-center py-1 px-2 transition-all duration-500">
+
+    <!-- Left Menu -->
+    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="index.html" class="hover:text-green-400 transition">Home</a>
+      <a href="about.html" class="hover:text-green-400 transition">About Us</a>
+      <a href="product.html" class="hover:text-green-400 transition">Products</a>
+    </nav>
+
+    <!-- Logo in Center -->
+    <div class="mx-12 transition-all duration-500">
+      <img id="logo" src="img/logo.png" alt="Earthly Basket" class="h-20 md:h-24 transition-all duration-500"> 
+    </div>
+
+    <!-- Right Menu -->
+    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="blog.html" class="hover:text-green-400 transition">Blog</a>
+      <a href="contact.html" class="hover:text-green-400 transition">Contact Us</a>
+      <a href="trackorder.html" class="hover:text-green-400 transition">Track Order</a>
+    </nav>
+     
+  </div>
+</header>
+
+
+
+  <!-- ✅ Blog Section with Background -->
+  <section class="relative bg-cover bg-center" style="background-image: url('img/about-us/bg-1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div> <!-- Overlay -->
+
+    <main class="relative max-w-7xl mx-auto px-6 py-16">
+      <!-- Header -->
+      <header class="mb-10 text-center text-white pt-32">
+          <h1 class="text-4xl md:text-5xl font-extrabold">Earthly Basket Blog</h1>
+          <p class="mt-3 max-w-2xl mx-auto text-gray-200">
+               Recipes, mindful eating, millets, seasonal produce and sustainable food tips from Earthly Basket.
+          </p>
+      </header>
+
+      <!-- Controls: Search + Categories + CTA -->
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+        <div class="flex-1 flex items-center gap-3">
+          <div class="relative w-full md:max-w-md">
+            <label for="search" class="sr-only">Search posts</label>
+            <input id="search" type="search" placeholder="Search recipes, tips, millets..."
+              class="w-full pl-4 pr-10 py-3 rounded-lg border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 absolute right-3 top-3 text-gray-400"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
+            </svg>
+          </div>
+
+          <div class="hidden md:flex items-center gap-2">
+            <button data-tag="all" class="tag-btn px-4 py-2 rounded-lg bg-emerald-700 text-white text-sm">All</button>
+            <button data-tag="recipes" class="tag-btn px-4 py-2 rounded-lg bg-white border text-sm">Recipes</button>
+            <button data-tag="millets" class="tag-btn px-4 py-2 rounded-lg bg-white border text-sm">Millets</button>
+            <button data-tag="sustainability" class="tag-btn px-4 py-2 rounded-lg bg-white border text-sm">Sustainability</button>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-medium">
+            Write for Earthly Basket
+          </a>
+        </div>
+      </div>
+
+      <!-- Blog grid -->
+      <section id="posts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Cards via JS -->
+      </section>
+
+      <!-- Pagination -->
+      <nav class="mt-8 flex items-center justify-center" aria-label="Pagination">
+        <button id="prevBtn" class="px-4 py-2 rounded-l-lg border border-gray-200 bg-white">Previous</button>
+        <div id="pageIndicator" class="px-6 py-2 border-t border-b border-gray-200 bg-white">1 / 1</div>
+        <button id="nextBtn" class="px-4 py-2 rounded-r-lg border border-gray-200 bg-white">Next</button>
+      </nav>
+    </main>
+  </section>
+
+
+<!-- ✅ Blog Script -->
+
+
+
+ 
+
+<!-- ✅ Footer -->
+<footer class="bg-black text-gray-300 py-12">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-10">
+    
+    <!-- Address -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Address</h3>
+      <p>Playworkz Coworking Space, 3rd Cross Street,<br>Peelamedu,Bharathi  <br>Colony, Coimbatore, Tamil Nadu 641015</p>
+    </div>
+
+    <!-- Head Office -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Head Office</h3>
+      <p>Playworkz Coworking Space, 3rd Cross Street,<br>Peelamedu,Bharathi  <br>Colony, Coimbatore, Tamil Nadu 641015</p>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Useful Links</h3>
+      <ul class="space-y-2">
+        <li><a href="blog.html" class="hover:text-white">Our Blog</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="product.html" class="hover:text-white">Shop</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Policies -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Policies</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white">Terms and Conditions</a></li>
+        <li><a href="#" class="hover:text-white">Delivery Policy</a></li>
+        <li><a href="#" class="hover:text-white">Return & Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Us -->
+    <div>
+      <h3 class="font-semibold text-white mb-3">Contact Us</h3>
+      
+  <div class="flex items-center gap-2 mb-2">
+    <span>📞</span>
+    <span>+91 86086 86085</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span>📧</span>
+    <span>info@earthlybasket.com</span>
+  </div>
+<div class="flex space-x-4 mt-4 justify-end">
+  <!-- Facebook -->
+  <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="Facebook">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.6l-.4 3h-2.2v7A10 10 0 0 0 22 12Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="#" class="text-gray-600 hover:text-pink-500" aria-label="Instagram">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.8-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
+    </svg>
+  </a>
+
+
+  <!-- YouTube -->
+  <a href="#" class="text-gray-600 hover:text-red-600" aria-label="YouTube">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
+      <path d="M21.8 8s-.2-1.5-.8-2.1c-.8-.9-1.7-.9-2.1-1C16.3 4.7 12 4.7 12 4.7h0s-4.3 0-6.9.2c-.4 0-1.3.1-2.1 1C2.2 6.5 2 8 2 8S1.8 9.7 1.8 11.4v1.2C1.8 14.3 2 16 2 16s.2 1.5.9 2.1c.8.9 1.8.9 2.2 1 1.6.1 6.9.2 6.9.2s4.3 0 6.9-.2c.4 0 1.3-.1 2.1-1 .7-.6.8-2.1.8-2.1s.2-1.7.2-3.4v-1.2c0-1.7-.2-3.4-.2-3.4zM9.7 14.6V9.4l5.6 2.6-5.6 2.6z"/>
+    </svg>
+  </a>
+</div>
+
+    </div>
+
+  </div>
+</footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out'
+    });
+  </script>
+
+  <script>
+ const navbar = document.getElementById("navbar");
+  const logo = document.getElementById("logo");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-black", "shadow-md", "py-2");
+      logo.classList.remove("h-20", "md:h-24");
+      logo.classList.add("h-12", "md:h-16");
+    } else {
+      navbar.classList.remove("bg-black", "shadow-md", "py-2");
+      logo.classList.remove("h-12", "md:h-16");
+      logo.classList.add("h-20", "md:h-24");
+    }
+  });
+</script>
+<script>
+  const posts = [
+    {
+      id: 1,
+      title: 'Millet Upma — A Quick, Nutritious Breakfast',
+      excerpt: 'Whip up a healthy upma using barnyard millet, infused with mustard seeds, curry leaves, and fresh vegetables. Ready in just 20 minutes.',
+      img: 'img/blog-1.png',
+      tag: 'recipes',
+      date: '2025-09-01',
+      minutes: 15
+    },
+    {
+      id: 2,
+      title: 'Nuts & Grains: A Powerhouse of Nutrition',
+      excerpt: 'Discover the benefits of combining nutrient-rich nuts with fiber-packed grains. From heart health to sustained energy, explore how this blend supports overall wellness and delicious recipes to try at home.',
+      img: 'img/blog-2.png',
+      tag: 'millets',
+      date: '2025-08-18',
+      minutes: 6
+    },
+    {
+      id: 3,
+      title: 'Why Millets Are the Climate-Smart Choice',
+      excerpt: 'Millets use minimal water, flourish in less fertile soils, and offer rich nutrition. Learn why they play a vital role in sustainable food systems.',
+      img : 'img/blog-3.png',
+      tag: 'sustainability',
+      date: '2025-07-30',
+      minutes: 4
+    }
+  ];
+
+  const perPage = 6;
+  let currentPage = 1;
+  let filtered = posts.slice();
+
+  function formatDate(d) {
+    const date = new Date(d);
+    return date.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+  }
+
+  function renderPosts() {
+    const container = document.getElementById('posts');
+    container.innerHTML = '';
+
+    const start = (currentPage - 1) * perPage;
+    const pagePosts = filtered.slice(start, start + perPage);
+
+    if (pagePosts.length === 0) {
+      container.innerHTML = '<p class="col-span-3 text-center text-gray-500">No posts found.</p>';
+      document.getElementById('pageIndicator').textContent = '0 / 0';
+      return;
+    }
+
+    pagePosts.forEach(post => {
+      const card = document.createElement('article');
+      card.className = 'bg-white rounded-2xl overflow-hidden card-hover shadow-sm';
+      card.innerHTML = `
+        <a href="#" class="block">
+          <div class="aspect-w-16 aspect-h-10 bg-gray-100 overflow-hidden">
+            <img src="${post.img}" alt="${post.title}" class="object-cover w-full h-full">
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-medium px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700">${post.tag}</span>
+              <span class="text-xs text-gray-400">${formatDate(post.date)} • ${post.minutes} min read</span>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">${post.title}</h3>
+            <p class="text-sm text-gray-600">${post.excerpt}</p>
+          </div>
+        </a>
+      `;
+      container.appendChild(card);
+    });
+
+    const totalPages = Math.ceil(filtered.length / perPage) || 1;
+    document.getElementById('pageIndicator').textContent = `${currentPage} / ${totalPages}`;
+  }
+
+  const searchInput = document.getElementById('search');
+  searchInput.addEventListener('input', () => applyFilters());
+
+  document.querySelectorAll('.tag-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const tag = e.currentTarget.getAttribute('data-tag');
+      document.querySelectorAll('.tag-btn').forEach(b => b.classList.remove('bg-emerald-700', 'text-white'));
+      e.currentTarget.classList.add('bg-emerald-700', 'text-white');
+      applyFilters(tag === 'all' ? null : tag);
+    });
+  });
+
+  function applyFilters(tag = null) {
+    const q = searchInput.value.trim().toLowerCase();
+    filtered = posts.filter(p => {
+      const matchTag = tag ? p.tag === tag : true;
+      const matchText = [p.title, p.excerpt, p.tag].join(' ').toLowerCase().includes(q);
+      return matchTag && matchText;
+    });
+    currentPage = 1;
+    renderPosts();
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => {
+    if (currentPage > 1) currentPage--;
+    renderPosts();
+  });
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    const totalPages = Math.ceil(filtered.length / perPage) || 1;
+    if (currentPage < totalPages) currentPage++;
+    renderPosts();
+  });
+
+  renderPosts();
+</script>
+
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+</body>
+</html>

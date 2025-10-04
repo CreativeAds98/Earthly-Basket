@@ -4,10 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Earthly Basket</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-    
+  
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/favicon.png"/>
+  <link rel="icon" type="image/png" href="img/logo.png"/>
 </head>
 <body class="font-sans bg-white text-gray-800">
 
@@ -30,6 +29,7 @@
 
     <!-- Right Menu -->
     <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
+      <a href="blog.html" class="hover:text-green-400 transition">Blog</a>
       <a href="contact.html" class="hover:text-green-400 transition">Contact Us</a>
       <a href="#track" class="hover:text-green-400 transition">Track Order</a>
     </nav>
@@ -76,10 +76,10 @@
     <div>
       <h3 class="font-semibold text-white mb-3">Useful Links</h3>
       <ul class="space-y-2">
-        <li><a href="#" class="hover:text-white">Our Blog</a></li>
-        <li><a href="#" class="hover:text-white">About Us</a></li>
-        <li><a href="#" class="hover:text-white">Shop</a></li>
-        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+        <li><a href="blog.html" class="hover:text-white">Our Blog</a></li>
+        <li><a href="about.html" class="hover:text-white">About Us</a></li>
+        <li><a href="product.html" class="hover:text-white">Shop</a></li>
+        <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
       </ul>
     </div>
 
@@ -87,18 +87,26 @@
     <div>
       <h3 class="font-semibold text-white mb-3">Policies</h3>
       <ul class="space-y-2">
-        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-        <li><a href="#" class="hover:text-white">Terms and Conditions</a></li>
-        <li><a href="#" class="hover:text-white">Delivery Policy</a></li>
-        <li><a href="#" class="hover:text-white">Return & Refund Policy</a></li>
+        <li><a href="./privacy-policy/privacy-policies.html" class="hover:text-white">Privacy Policy</a></li>
+        <li><a href="./privacy-policy/terms-conditions.html" class="hover:text-white">Terms and Conditions</a></li>
+        <li><a href="./privacy-policy/delivery.html" class="hover:text-white">Delivery Policy</a></li>
+        <li><a href="./privacy-policy/refund-return.html" class="hover:text-white">Return & Refund Policy</a></li>
       </ul>
     </div>
 
     <!-- Contact Us -->
     <div>
       <h3 class="font-semibold text-white mb-3">Contact Us</h3>
-      <p>📞 +91 86086 86085 </p>
-      <p>📧 info@earthlybasket.com</p>
+      
+  <div class="flex items-center gap-2 mb-2">
+    <span>📞</span>
+    <span>+91 86086 86085</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <span>📧</span>
+    <span>info@earthlybasket.com</span>
+  </div>
 <div class="flex space-x-4 mt-4 justify-end">
   <!-- Facebook -->
   <a href="#" class="text-gray-600 hover:text-blue-600" aria-label="Facebook">
@@ -114,12 +122,7 @@
     </svg>
   </a>
 
-  <!-- X (Twitter) -->
-  <a href="#" class="text-gray-600 hover:text-black" aria-label="X">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="h-6 w-6">
-      <path d="M17.21 3H20.5l-7.5 9.5 8.8 11.5h-6.9L9.8 15.6 4.2 24H.9L9 13.9.6 3h7.1l5 6.6L17.2 3z"/>
-    </svg>
-  </a>
+
 
   <!-- YouTube -->
   <a href="#" class="text-gray-600 hover:text-red-600" aria-label="YouTube">
@@ -165,5 +168,6 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="script.js"></script>
   <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
