@@ -13,46 +13,181 @@
 
 
 <!-- ✅ Navbar -->
-<header id="navbar" class="fixed w-full z-50 transition-all duration-500">
-  <div class="max-w-7xl mx-auto flex justify-center items-center py-1 px-2 transition-all duration-500">
+<header id="navbar" class="fixed w-full z-50 transition-all duration-500 ">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-center items-center py-1 px-2 transition-all duration-500">
 
     <!-- Left Menu -->
-    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
-      <a href="index.html" class="hover:text-green-400 transition">Home</a>
-      <a href="about.html" class="hover:text-green-400 transition">About Us</a>
-      <a href="#products" class="hover:text-green-400 transition">Products</a>
+    <nav class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-white font-medium transition-all duration-500 w-full md:w-auto mb-2 md:mb-0">
+      <a href="index.html" class="hover:text-green-400 transition px-2">Home</a>
+      <a href="about.html" class="hover:text-green-400 transition px-2">About Us</a>
+      <a href="product.html" class="hover:text-green-400 transition px-2">Products</a>
     </nav>
 
     <!-- Logo in Center -->
-    <div class="mx-12 transition-all duration-500">
-      <img id="logo" src="img/logo.png" alt="Earthly Basket" class="h-20 md:h-24 transition-all duration-500"> 
+    <div class="mx-4 md:mx-12 transition-all duration-500 flex-shrink-0">
+      <img id="logo" src="img/logo.png" alt="Earthly Basket" class="h-16 md:h-24 transition-all duration-500 mx-auto">
     </div>
 
     <!-- Right Menu -->
-    <nav class="flex space-x-6 text-white font-medium transition-all duration-500">
-      <a href="blog.html" class="hover:text-green-400 transition">Blog</a>
-      <a href="contact.html" class="hover:text-green-400 transition">Contact Us</a>
-      <a href="trackorder.html" class="hover:text-green-400 transition">Track Order</a>
+    <nav class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-white font-medium transition-all duration-500 w-full md:w-auto mt-2 md:mt-0">
+      <a href="blog.html" class="hover:text-green-400 transition px-2">Blog</a>
+      <a href="contact.html" class="hover:text-green-400 transition px-2">Contact Us</a>
+      <a href="trackorder.html" class="hover:text-green-400 transition px-2">Track Order</a>
     </nav>
-     
+
   </div>
 </header>
 
 
 
+<!-- ✅ Product Grid Section -->
+<section class="relative py-20 bg-cover bg-center" style="background-image: url('img/about-us/bg-1.jpg');">
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div> <!-- dark overlay -->
 
-<!-- ✅ Coming Soon Section -->
-<section class="relative py-32 bg-cover bg-center flex items-center justify-center" style="background-image: url('img/about-us/bg-1.jpg');">
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div> <!-- dark overlay -->
+  <div class="relative max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-white mb-14 mt-8">Our Featured Products</h2>
 
-  <div class="relative text-center">
-    <img src="img/coming-soon.jpg" alt="Coming Soon" class="mx-auto max-w-lg">
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      
+      <!-- Single Product Card -->
+      <!-- Repeat this 12 times with different content -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product1.png" alt="Product 1" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2"> Cashews</h3>
+          <p class="text-gray-600 text-sm mb-3">Deliciously rich cashews crafted for unmatched taste and quality.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product2.png" alt="Product 2" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2"> Sliced Coconut</h3>
+          <p class="text-gray-600 text-sm mb-3">Stylish and durable product with modern design.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product3.png" alt="Product 3" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2"> Pistha</h3>
+          <p class="text-gray-600 text-sm mb-3">Rich and flavorful pistachios packed with freshness and crunch.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product4.png" alt="Product 4" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2"> Pumpkin Seed</h3>
+          <p class="text-gray-600 text-sm mb-3">Nutrient-rich seeds offering fresh flavor and natural energy.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product5.png" alt="Product 5" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Soy Nuts</h3>
+          <p class="text-gray-600 text-sm mb-3">Crispy, protein-packed snacks made for wholesome everyday munching.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product6.png" alt="Product 6" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Pomegranite Seed</h3>
+          <p class="text-gray-600 text-sm mb-3">Naturally sweet and crunchy seeds for a refreshing, healthy boost.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product7.png" alt="Product 7" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Jackfruit Seed</h3>
+          <p class="text-gray-600 text-sm mb-3">Wholesome and crunchy seeds packed with natural protein and flavor.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product8.png" alt="Product 8" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Water Melon Seed</h3>
+          <p class="text-gray-600 text-sm mb-3">Crafted for those who love quality.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product9.png" alt="Product 9" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Peanuts</h3>
+          <p class="text-gray-600 text-sm mb-3">Crunchy and flavorful, a classic snack loved for every occasion.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product10.png" alt="Product 10" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Cardamom</h3>
+          <p class="text-gray-600 text-sm mb-3">Aromatic and flavorful spice known for its freshness and richness.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product11.png" alt="Product 11" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Badam</h3>
+          <p class="text-gray-600 text-sm mb-3">Nutritious and tasty almonds perfect for daily healthy snacking.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+        <img src="img/products/product12.png" alt="Product 12" class="w-full h-70 object-cover">
+        <div class="p-6 text-center">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Mixed Nuts</h3>
+          <p class="text-gray-600 text-sm mb-3">A delicious assortment of premium nuts for balanced taste and energy.</p>
+          <span class="block text-orange-600 font-bold mb-4">₹500.00</span>
+          <button class="bg-orange-600 text-white px-5 py-2 rounded-full text-sm hover:bg-orange-700 transition">Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
   </div>
+  
 </section>
 
 
 
 
+<!-- FSSAI number above footer -->
+<div class="max-w-6xl mx-auto px-6">
+  <div class="flex justify-center">
+    <div class="bg-gray-900 text-yellow-300 px-4 py-2 rounded-lg shadow-lg text-sm font-semibold mt-6">
+      FSSAI No: 22425557000006
+    </div>
+  </div>
+</div>
  
 
 <!-- ✅ Footer -->
