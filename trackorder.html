@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Earthly Basket</title>
-  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/logo.png"/>
 </head>
@@ -53,18 +54,13 @@
 
 
 
-<!-- FSSAI number above footer -->
-<div class="max-w-6xl mx-auto px-6">
-  <div class="flex justify-center">
-    <div class="bg-gray-900 text-yellow-300 px-4 py-2 rounded-lg shadow-lg text-sm font-semibold mt-6">
-      FSSAI No: 22425557000006
-    </div>
-  </div>
-</div>
- 
-
 <!-- ✅ Footer -->
-<footer class="bg-black text-gray-300 py-12">
+<footer class="bg-black text-gray-300 pt-16 pb-12 relative">
+  <div class="absolute top-4 right-6 md:right-12 z-20">
+    <div class="bg-gray-900 text-yellow-300 px-4 py-2 rounded-lg shadow-lg text-sm font-semibold">FSSAI No: 22425557000006</div>
+  </div>
+  
+  
   <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-10">
     
     <!-- Address -->
